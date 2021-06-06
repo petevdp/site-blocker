@@ -1,0 +1,14 @@
+{
+  "name": "Site Blocker",
+  "description": "simple list-based site blocking",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "webNavigation", "tabs"]
+}
