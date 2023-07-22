@@ -1,5 +1,5 @@
 export function isSiteBlocked(hostsText: string, url: string) {
-  if (!hostsText.trim()) {
+  if (!hostsText || !hostsText?.trim()) {
     return false;
   }
   const blockedHosts =  hostsText.split("\n").map((line) => line.trim())

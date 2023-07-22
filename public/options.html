@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site Blocker</title>
-  <script src="vendor.js"></script>
+    <title>Site Blocker</title>
+    <script src="vendor.js"></script>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script src="options.js"></script>
+<div>
+    <h1>Blocked Sites</h1>
+    <form id="options-form">
+        <textarea id="blocked-sites" style="height: 500px; width: 400px"></textarea>
+        <button type="submit">Save</button>
+    </form>
+    <div>
+        <h2>stats:</h2>
+        <p>All Attempts blocked: <span id="all-attempts-blocked"></span></p>
+    </div>
+</div>
+<script src="options.js"></script>
 </body>
 </html>
